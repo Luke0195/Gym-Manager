@@ -1,0 +1,170 @@
+:root{
+  --primary-color:#50fa7b;
+  --color-rocket:#7159ce;
+}
+
+*{
+  margin:0;
+  padding: 0;
+  border: 0;
+  font-family: 'Source Sans Pro',Arial, Helvetica, sans-serif;
+}
+
+html,body{
+  height: 100%;
+}
+body{
+  background-color:#282a36;
+  color:white;
+}
+
+header{
+  padding: 32px;
+  border-bottom:1px solid #333;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.links {
+  text-align: center;
+}
+
+.links a{
+  margin: 0 16px;
+  font-size:18px;
+  line-height: 28px;
+  color:white;
+  padding-bottom: 3px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.links a:hover{
+  transition:0.5s;
+  color:#50fa7b;
+}
+
+#wraper{
+  margin-top: 30px;
+  text-align: center;
+
+}
+
+#wraper img{
+  height: 300px;
+  border-radius: 50%;
+  border:5px solid var(--primary-color);
+  margin-bottom: 32px;
+}
+
+#wraper h1{
+  margin: 8px 0;
+  font-weight: bold;
+  font-size:42px;
+  line-height: 52px;
+  text-shadow: 1px 1px 3px black;
+}
+
+#wraper h2{
+  font-size:24px;
+  line-height: 34px;
+  font-weight: normal;
+  margin: 8px 0;
+  opacity: 0.8;
+}
+
+#wraper p{
+   max-width: 500px;
+   margin: 32px auto;
+   font-size: 18px;
+   line-height: 28px; 
+}
+
+#wraper p a{
+  color:var(--primary-color);
+}
+
+.sociais{
+  margin-bottom: 30px;
+}
+.sociais :hover{
+  text-decoration: underline;
+ 
+}
+
+/****** Aulas ************/
+
+
+.cards{
+  max-width: 800px;
+  margin: 20px  auto;
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  gap: 20px;
+
+}
+
+.card{
+    background-color:#7159ce;
+}
+
+.card:hover{
+  cursor: pointer;
+}
+.card-image-container img{
+  width: 100%;
+}
+
+.card-content, 
+.card-info{
+  padding:24px; 
+}
+
+.card-info{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+}
+
+.card_price{
+  text-align: center;
+  padding-right:20px;
+  background-color:var(--color-rocket);
+  filter: brightness(90%);
+  padding:5px 20px;
+  border-radius: 20px;
+}
+
+
+.modal-overlay{
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0,0,0,0.7);
+  position: fixed;
+  top:0;
+  visibility: hidden;
+}
+
+.modal{
+  width: 90%;
+  height: 90%;
+  background-color:#fff;
+  margin: 5vh auto;
+  position: relative;
+  
+ 
+}
+
+.close{
+  
+  position: absolute;
+  top:10px;
+  right: 10px;
+}
+
+.close  span{
+  color:black;
+  cursor: pointer;
+}
+
+.ativo{
+  visibility: visible;
+}
